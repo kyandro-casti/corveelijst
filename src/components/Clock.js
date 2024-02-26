@@ -46,7 +46,7 @@ function Clock() {
         } if (currentHour === 16 && currentMinutes === 1) {
           newDisplayTasks.push(
           {task: 'Uitruimen vaatwasser', interns: getRandomInterns(3) },
-          {task: 'planten water geven', interns : ["kyandro", getRandomInterns(1)]}
+          {task: 'planten water geven', interns : ["nam1", getRandomInterns(1)]}
          );
          
         } if (currentHour === 11 && currentMinutes === 30){
@@ -55,7 +55,7 @@ function Clock() {
         }
       }else if (currentDay === 2){
         if(currentHour === 16 && currentMinutes === 20){
-          newDisplayTasks.push({ task: 'Wegbrengen glaswerk en papier/karton', interns: ['bryan', getRandomInterns(1)] }, {task: 'tafeltennis melden', interns: getRandomInterns(1)});
+          newDisplayTasks.push({ task: 'Wegbrengen glaswerk en papier/karton', interns: ['name2', getRandomInterns(1)] }, {task: 'tafeltennis melden', interns: getRandomInterns(1)});
           
         } else if (currentHour === 11 && currentMinutes === 30) {
           newDisplayTasks.push({ task: 'klaarzetten lunch', interns: getRandomInterns(5) });
@@ -88,7 +88,7 @@ function Clock() {
   }, [currentDateTime]);
   
   const getRandomInterns = (count) => {
-    const interns = ['Bryan', 'Kyandro', 'Khaled', 'Jason', 'Connor'];
+    const interns = ['name1', 'name2', 'name3', 'name4', 'name5'];
     const selectedInterns = [];
     for (let i = 0; i < count; i++) {
       const randomIndex = Math.floor(Math.random() * interns.length);
