@@ -112,7 +112,10 @@ function Clock() {
     setSpareIntern(getRandomInterns(1))
   }
   return (
-    <div>
+    <div style={{color: 'yellow'}}>
+      <div>
+      <img src='https://www.solease.nl/app/uploads/2019/07/Solease_logo_wit_transparant.png' id='image' alt='' width={100} style={{float: 'right'}}></img>
+      </div>
       <h1>Current Time:</h1>
       <h2>{currentDateTime.toLocaleTimeString()}</h2>
       <h1>Current Date:</h1>
@@ -128,10 +131,14 @@ function Clock() {
 ))}
       <p>In geval van zieken</p>
       <p>{spareIntern}</p>
-      <button onClick={handleSickIntern}>extra stagiair</button>
+      <button onClick={handleSickIntern} style={{color: 'yellow', backgroundColor: 'lightblue'}}>extra stagiair</button>
 
     </div>
   );
 }
 
 export default Clock;
+/*body{
+    background-color: aqua;
+    
+}*/
