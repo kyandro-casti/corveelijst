@@ -128,7 +128,7 @@ function Clock() {
 ))}
       <p>In geval van zieken</p>
       <p>{spareIntern}</p>
-      <button onClick={handleSickIntern}}>extra stagiair</button>
+      <button onClick={handleSickIntern}>extra stagiair</button>
 
     </div>
   );
